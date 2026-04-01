@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sri Venkateshwara Rice Traders — Film Nagar's most trusted rice supplier. 19 premium brands, zero mixing, FSSAI certified. 500+ families served.">
+<meta property="og:title" content="Sri Venkateshwara Rice Traders — Film Nagar">
+<meta property="og:description" content="Pure rice. Honest prices. A 20-year journey from farming roots to Film Nagar's main road.">
+<title>Sri Venkateshwara Rice Traders — Film Nagar, Hyderabad</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --g:#0a2e14;--g2:#0f3d1c;--g3:#1a5c2e;
+  --gold:#c49a3c;--gold2:#e8bb5a;--gold-pale:#f9f0d8;
+  --cream:#faf7f0;--ink:#1a1208;--ink2:#4a3c28;--ink3:#8a7a60;
+  --red:#b83020;--white:#ffffff;
+  --border:rgba(196,154,60,0.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+.te{font-family:'Noto Sans Telugu',sans-serif}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 24px;
+  background:rgba(10,46,20,0.95);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(196,154,60,0.15);
+  transition:all .3s;
+}
+.nav-logo{
+  display:flex;align-items:center;gap:10px;
+}
+.nav-logo-mark{
+  width:36px;height:36px;border-radius:50%;
+  background:transparent;border:1.5px solid var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Cormorant Garamond',serif;font-size:13px;font-weight:700;color:var(--gold);
+  letter-spacing:-.5px;
+}
+.nav-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:16px;font-weight:600;color:var(--white);
+  letter-spacing:.01em;
+}
+.nav-name span{color:var(--gold2);font-style:italic}
+.nav-links{display:flex;align-items:center;gap:20px}
+.nav-links a{
+  font-size:12px;font-weight:500;color:rgba(255,255,255,0.6);
+  letter-spacing:.04em;transition:color .2s;
+}
+.nav-links a:hover{color:var(--gold2)}
+.nav-cta{
+  padding:8px 18px;background:var(--gold);color:var(--g);
+  border-radius:6px;font-size:12px;font-weight:700;
+  letter-spacing:.04em;transition:all .2s;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--gold2);color:var(--g)}
+@media(max-width:600px){
+  .nav-links{display:none}
+}
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  background:var(--g);
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  padding:100px 24px 60px;
+  text-align:center;
+  position:relative;overflow:hidden;
+}
+.hero-pattern{
+  position:absolute;inset:0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(196,154,60,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(196,154,60,0.04) 0%, transparent 40%);
+  pointer-events:none;
+}
+.hero-grain{
+  position:absolute;inset:0;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  pointer-events:none;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 14px;border:1px solid rgba(196,154,60,0.3);
+  border-radius:20px;margin-bottom:28px;
+  font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(196,154,60,0.8);
+}
+.hero-badge::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--gold);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(42px,10vw,80px);
+  font-weight:700;color:var(--white);
+  line-height:1.05;letter-spacing:-.02em;
+  margin-bottom:14px;
+}
+.hero-h1 em{color:var(--gold2);font-style:italic}
+.hero-h1 .small{font-size:.45em;display:block;color:rgba(255,255,255,0.45);font-weight:400;letter-spacing:.06em;font-style:normal;margin-top:8px;font-family:'DM Sans',sans-serif;text-transform:uppercase}
+.hero-sub{
+  font-size:16px;color:rgba(255,255,255,0.55);
+  line-height:1.7;max-width:440px;margin:0 auto 40px;
+}
+.hero-cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{
+  padding:15px 32px;background:var(--gold);color:var(--g);
+  border-radius:8px;font-size:15px;font-weight:700;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:all .2s;border:none;cursor:pointer;font-family:inherit;
+}
+.btn-primary:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-secondary{
+  padding:15px 32px;background:transparent;color:var(--white);
+  border:1.5px solid rgba(255,255,255,0.2);border-radius:8px;
+  font-size:15px;font-weight:500;
+  display:inline-flex;align-items:center;gap:8px;
+  transition:all .2s;
+}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.4);background:rgba(255,255,255,0.05)}
+.hero-stats{
+  display:flex;gap:0;border-top:1px solid rgba(196,154,60,0.15);
+  padding-top:36px;justify-content:center;width:100%;max-width:480px;
+}
+.hero-stat{
+  flex:1;text-align:center;padding:0 16px;
+  border-right:1px solid rgba(196,154,60,0.15);
+}
+.hero-stat:last-child{border-right:none}
+.hero-stat-n{
+  font-family:'Cormorant Garamond',serif;
+  font-size:32px;font-weight:700;color:var(--gold2);line-height:1;
+}
+.hero-stat-l{font-size:10px;color:rgba(255,255,255,0.35);margin-top:4px;letter-spacing:.06em;text-transform:uppercase}
+
+/* ── TRUST BAR ── */
+.trust-bar{
+  background:var(--gold);
+  padding:14px 24px;
+  display:flex;align-items:center;justify-content:center;gap:32px;
+  flex-wrap:wrap;overflow:hidden;
+}
+.trust-item{
+  display:flex;align-items:center;gap:7px;
+  font-size:12px;font-weight:700;color:var(--g);
+  letter-spacing:.03em;white-space:nowrap;
+}
+.trust-dot{width:4px;height:4px;border-radius:50%;background:rgba(10,46,20,0.4)}
+
+/* ── SECTION BASE ── */
+.section{padding:80px 24px;max-width:760px;margin:0 auto}
+.section.wide{max-width:960px}
+.section-eyebrow{
+  font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:10px;
+  display:flex;align-items:center;gap:10px;
+}
+.section-eyebrow::after{content:'';flex:1;max-width:40px;height:1px;background:rgba(196,154,60,0.3)}
+.section-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(28px,5vw,42px);font-weight:700;
+  color:var(--ink);line-height:1.2;margin-bottom:14px;
+}
+.section-title em{color:var(--g3);font-style:italic}
+.section-sub{font-size:15px;color:var(--ink2);line-height:1.75;max-width:520px}
+
+/* ── STORY ── */
+.story-section{
+  background:var(--g);
+  padding:80px 24px;
+  position:relative;overflow:hidden;
+}
+.story-inner{max-width:720px;margin:0 auto}
+.story-section .section-title{color:var(--white)}
+.story-section .section-sub{color:rgba(255,255,255,0.55)}
+.story-timeline{margin-top:48px;position:relative}
+.story-timeline::before{
+  content:'';position:absolute;left:20px;top:0;bottom:0;
+  width:1px;background:rgba(196,154,60,0.2);
+}
+.story-item{
+  display:flex;gap:24px;margin-bottom:40px;position:relative;
+}
+.story-dot-wrap{
+  flex-shrink:0;width:40px;display:flex;flex-direction:column;align-items:center;
+}
+.story-dot{
+  width:10px;height:10px;border-radius:50%;
+  background:var(--gold);border:2px solid var(--g);
+  flex-shrink:0;margin-top:5px;
+  box-shadow:0 0 0 4px rgba(196,154,60,0.1);
+}
+.story-year{
+  font-size:10px;font-weight:700;color:rgba(196,154,60,0.6);
+  letter-spacing:.08em;margin-top:6px;writing-mode:horizontal-tb;
+}
+.story-content{}
+.story-head{
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px;font-weight:600;color:var(--white);
+  margin-bottom:6px;line-height:1.3;
+}
+.story-body{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.8}
+.story-pullquote{
+  margin:36px 0;padding:20px 24px;
+  border-left:2px solid var(--gold);
+  background:rgba(196,154,60,0.06);
+  border-radius:0 8px 8px 0;
+}
+.story-pullquote-text{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;font-style:italic;
+  color:var(--gold2);line-height:1.6;
+}
+
+/* ── WHY US ── */
+.why-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:16px;margin-top:40px;
+}
+.why-card{
+  padding:24px;border:1px solid var(--border);
+  border-radius:12px;background:var(--white);
+  transition:border-color .2s,transform .2s;
+}
+.why-card:hover{border-color:rgba(196,154,60,0.4);transform:translateY(-2px)}
+.why-icon{font-size:26px;margin-bottom:12px}
+.why-title{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:6px}
+.why-desc{font-size:13px;color:var(--ink3);line-height:1.65}
+
+/* ── BRANDS ── */
+.brands-section{background:var(--g);padding:80px 24px}
+.brands-inner{max-width:900px;margin:0 auto}
+.brands-section .section-title{color:var(--white)}
+.brands-section .section-sub{color:rgba(255,255,255,0.5)}
+.brands-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+  gap:10px;margin-top:40px;
+}
+.brand-card{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(196,154,60,0.12);
+  border-radius:10px;padding:14px;
+  transition:all .2s;cursor:default;
+}
+.brand-card:hover{background:rgba(196,154,60,0.07);border-color:rgba(196,154,60,0.3)}
+.brand-card.push{border-color:rgba(196,154,60,0.3);background:rgba(196,154,60,0.06)}
+.bc-name{font-size:13px;font-weight:600;color:var(--white);margin-bottom:2px;line-height:1.3}
+.bc-size{font-size:11px;color:rgba(255,255,255,0.35);margin-bottom:8px}
+.bc-price{
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;font-weight:700;color:var(--gold2);
+}
+.bc-tag{
+  display:inline-block;margin-top:5px;
+  font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:2px 6px;border-radius:3px;
+  background:rgba(196,154,60,0.15);color:var(--gold2);
+}
+.bc-tag.vol{background:rgba(30,157,117,0.15);color:#5DE0AA}
+.brands-note{
+  margin-top:20px;font-size:12px;color:rgba(255,255,255,0.3);
+  text-align:center;
+}
+
+/* ── PRICE CHECK CTA ── */
+.pcheck-section{
+  background:linear-gradient(135deg,#0f3d1c 0%,#1a5c2e 100%);
+  padding:72px 24px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.pcheck-section::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(
+    -45deg,rgba(196,154,60,0.03) 0,rgba(196,154,60,0.03) 1px,
+    transparent 1px,transparent 14px
+  );
+}
+.pcheck-inner{max-width:520px;margin:0 auto;position:relative}
+.pcheck-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:36px;font-weight:700;color:var(--white);
+  line-height:1.2;margin-bottom:12px;
+}
+.pcheck-title em{color:var(--gold2);font-style:italic}
+.pcheck-sub{font-size:15px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:32px}
+.pcheck-te{
+  font-family:'Noto Sans Telugu',sans-serif;
+  font-size:15px;color:rgba(255,255,255,0.4);margin-bottom:24px;line-height:1.8;
+}
+
+/* ── STORY SHORT ── */
+.founding-band{
+  background:var(--gold-pale);
+  border-top:1px solid rgba(196,154,60,0.2);
+  border-bottom:1px solid rgba(196,154,60,0.2);
+  padding:60px 24px;
+}
+.founding-inner{max-width:680px;margin:0 auto}
+.founding-quote{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(20px,4vw,28px);font-style:italic;
+  color:var(--g);line-height:1.55;margin-bottom:20px;
+}
+.founding-attr{
+  font-size:13px;color:var(--ink3);
+  display:flex;align-items:center;gap:12px;
+}
+.founding-attr::before{content:'';width:32px;height:1px;background:var(--gold)}
+
+/* ── TESTIMONIALS ── */
+.test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px}
+.test-card{
+  background:var(--white);border:1px solid var(--border);
+  border-radius:12px;padding:22px;
+}
+.test-stars{color:var(--gold);font-size:13px;margin-bottom:10px;letter-spacing:2px}
+.test-text{font-size:14px;color:var(--ink2);line-height:1.75;margin-bottom:14px;font-style:italic}
+.test-author{font-size:13px;font-weight:600;color:var(--ink)}
+.test-role{font-size:11px;color:var(--ink3);margin-top:2px}
+
+/* ── HOW TO ORDER ── */
+.order-steps{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:0;margin-top:40px;
+  border:1px solid var(--border);border-radius:12px;overflow:hidden;
+}
+.order-step{
+  padding:28px 20px;border-right:1px solid var(--border);
+  text-align:center;
+}
+.order-step:last-child{border-right:none}
+.os-num{
+  width:36px;height:36px;border-radius:50%;
+  background:var(--g);color:var(--gold2);
+  font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 12px;
+}
+.os-title{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:5px}
+.os-desc{font-size:12px;color:var(--ink3);line-height:1.6}
+
+/* ── LOCATION ── */
+.location-band{
+  background:var(--g);padding:56px 24px;
+}
+.location-inner{
+  max-width:720px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;
+}
+@media(max-width:580px){.location-inner{grid-template-columns:1fr;gap:28px}}
+.loc-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:28px;font-weight:700;color:var(--white);
+  margin-bottom:16px;
+}
+.loc-detail{
+  display:flex;gap:12px;align-items:flex-start;
+  margin-bottom:14px;
+}
+.loc-detail-icon{font-size:16px;flex-shrink:0;margin-top:2px}
+.loc-detail-text{font-size:14px;color:rgba(255,255,255,0.6);line-height:1.6}
+.loc-detail-text strong{color:var(--white)}
+.loc-map-placeholder{
+  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(196,154,60,0.15);
+  border-radius:12px;padding:28px;
+  text-align:center;
+}
+.loc-map-btn{
+  display:block;padding:12px 22px;
+  background:var(--gold);color:var(--g);
+  border-radius:8px;font-size:14px;font-weight:700;
+  margin-top:16px;transition:background .2s;
+  text-align:center;
+}
+.loc-map-btn:hover{background:var(--gold2)}
+
+/* ── FOOTER ── */
+footer{
+  background:var(--ink);
+  padding:40px 24px 32px;
+  text-align:center;
+}
+.footer-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;font-weight:700;color:var(--white);
+  margin-bottom:6px;
+}
+.footer-logo span{color:var(--gold2);font-style:italic}
+.footer-tagline{font-size:12px;color:rgba(255,255,255,0.3);margin-bottom:20px;letter-spacing:.06em;text-transform:uppercase}
+.footer-links{
+  display:flex;gap:20px;justify-content:center;flex-wrap:wrap;
+  margin-bottom:24px;
+}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.4);transition:color .2s}
+.footer-links a:hover{color:var(--gold2)}
+.footer-copy{font-size:11px;color:rgba(255,255,255,0.2)}
+
+/* ── STICKY WA ── */
+.wa-float{
+  position:fixed;bottom:24px;right:24px;z-index:200;
+  width:56px;height:56px;border-radius:50%;
+  background:#25D366;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 20px rgba(37,211,102,0.35);
+  transition:transform .2s;
+}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:28px;height:28px}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-badge{animation:fadeUp .6s .1s both}
+.hero-h1{animation:fadeUp .6s .25s both}
+.hero-sub{animation:fadeUp .6s .4s both}
+.hero-cta-row{animation:fadeUp .6s .55s both}
+.hero-stats{animation:fadeUp .6s .7s both}
+
+/* Responsive */
+@media(max-width:480px){
+  .brands-grid{grid-template-columns:1fr 1fr}
+  .order-steps{grid-template-columns:1fr}
+  .order-step{border-right:none;border-bottom:1px solid var(--border)}
+  .order-step:last-child{border-bottom:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-mark">SVR</div>
+    <div class="nav-name">Sri <span>Venkateshwara</span> Rice</div>
+  </div>
+  <div class="nav-links">
+    <a href="#brands">Brands</a>
+    <a href="#story">Our Story</a>
+    <a href="#order">How to Order</a>
+    <a href="#location">Location</a>
+  </div>
+  <a class="nav-cta" href="https://wa.me/918096736572?text=Hello%20SVR%2C%20I%20want%20to%20order%20rice." target="_blank">Order Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-pattern"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-badge">Film Nagar's Most Trusted · Since 2022</div>
+  <h1 class="hero-h1">
+    Pure Rice.<br><em>Honest Prices.</em>
+    <span class="small">Sri Venkateshwara Rice Traders · Film Nagar, Hyderabad</span>
+  </h1>
+  <p class="hero-sub">19 premium rice brands. Zero mixing. FSSAI certified every batch. Delivering to 500+ families, hotels and mess operators across Hyderabad.</p>
+  <div class="hero-cta-row">
+    <a class="btn-primary" href="https://wa.me/918096736572?text=Hello%20SVR%2C%20I%20want%20to%20know%20your%20rice%20prices." target="_blank">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.843L0 24l6.357-1.508A11.959 11.959 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      WhatsApp to Order
+    </a>
+    <a class="btn-secondary" href="https://moonlit-cuchufli-14c385.netlify.app" target="_blank">Check Your Price →</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hero-stat-n">500+</div><div class="hero-stat-l">Happy Families</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">19</div><div class="hero-stat-l">Rice Brands</div></div>
+    <div class="hero-stat"><div class="hero-stat-n">0</div><div class="hero-stat-l">Mixing. Ever.</div></div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">✓ FSSAI Certified</div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">✓ Zero Rice Mixing</div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">✓ Wholesale Rates for All</div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">✓ Home Delivery Available</div>
+  <div class="trust-dot"></div>
+  <div class="trust-item">✓ 3 Years · Film Nagar</div>
+</div>
+
+<!-- WHY US -->
+<section class="section">
+  <div class="section-eyebrow">Why 500+ families trust us</div>
+  <h2 class="section-title">We don't just sell rice.<br>We <em>stand behind</em> every grain.</h2>
+  <p class="section-sub">We came from farming roots. We know what good rice looks like, feels like, and tastes like. That is the standard we hold — every bag, every batch, every time.</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">🌾</div>
+      <div class="why-title">Farming Roots</div>
+      <div class="why-desc">Our family comes from the rice farms of Nalgonda district. We know quality at the source, not from a catalogue.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🔬</div>
+      <div class="why-title">Zero Mixing Policy</div>
+      <div class="why-desc">Every bag is exactly what the label says. We hand-check every brand before it reaches you. No blending, no shortcuts.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💰</div>
+      <div class="why-title">Wholesale Rates</div>
+      <div class="why-desc">Whether you buy 1 bag or 100, you get the best price in Film Nagar. We don't have two prices — just one honest price.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🚚</div>
+      <div class="why-title">Reliable Supply</div>
+      <div class="why-desc">Hotels, mess operators, caterers — we supply tons of rice monthly. You won't run out. We won't let you down.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">📋</div>
+      <div class="why-title">FSSAI Certified</div>
+      <div class="why-desc">Every batch certified. Every brand verified. The food safety standard is not optional for us — it's the minimum.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🤝</div>
+      <div class="why-title">Personal Service</div>
+      <div class="why-desc">Call us. WhatsApp us. We respond. We deliver. We resolve. Small shop values with large supply capability.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDING QUOTE -->
+<div class="founding-band">
+  <div class="founding-inner">
+    <div class="founding-quote">"We are not here to drain your money and make profits. We are here to increase the value of every paisa you spend with us."</div>
+    <div class="founding-attr te">— వెంకటేష్, Founder · Sri Venkateshwara Rice Traders</div>
+  </div>
+</div>
+
+<!-- BRANDS -->
+<section class="brands-section" id="brands">
+  <div class="brands-inner">
+    <div class="section-eyebrow" style="color:rgba(196,154,60,0.7)">All brands in stock</div>
+    <h2 class="section-title">19 Premium Rice Brands.<br><em>Every variety. One shop.</em></h2>
+    <p class="section-sub">From everyday Sona Masoori to premium Kolam and Basmati — all hand-selected, all certified, all at honest prices.</p>
+    <div class="brands-grid">
+      <div class="brand-card push"><div class="bc-name">Gajraj Pooja HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,350</div><div class="bc-tag">Best Seller</div></div>
+      <div class="brand-card push"><div class="bc-name">Annapurna JSR</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,250</div><div class="bc-tag">Best Seller</div></div>
+      <div class="brand-card"><div class="bc-name">A-Class HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,450</div></div>
+      <div class="brand-card"><div class="bc-name">Joker Kolam</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,600</div></div>
+      <div class="brand-card"><div class="bc-name">RSV Kolam</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,580</div></div>
+      <div class="brand-card"><div class="bc-name">JSR Rice</div><div class="bc-size">25 kg bag</div><div class="bc-price">₹1,450</div></div>
+      <div class="brand-card"><div class="bc-name">Narasimha BPT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,380</div></div>
+      <div class="brand-card"><div class="bc-name">RSV Special HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,350</div></div>
+      <div class="brand-card"><div class="bc-name">Kurnool No.1 Sona</div><div class="bc-size">25 kg bag</div><div class="bc-price">₹1,280</div></div>
+      <div class="brand-card"><div class="bc-name">RRI HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,320</div></div>
+      <div class="brand-card"><div class="bc-name">Maharshi HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,300</div></div>
+      <div class="brand-card"><div class="bc-name">Cow Brand HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,300</div></div>
+      <div class="brand-card"><div class="bc-name">Sree Maateja HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,300</div></div>
+      <div class="brand-card"><div class="bc-name">Surya Teja</div><div class="bc-size">25 kg bag</div><div class="bc-price">₹1,200</div></div>
+      <div class="brand-card"><div class="bc-name">Swach Premium</div><div class="bc-size">25 kg bag</div><div class="bc-price">₹1,180</div></div>
+      <div class="brand-card vol"><div class="bc-name">Gajraj HMT</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,150</div><div class="bc-tag vol">Volume</div></div>
+      <div class="brand-card"><div class="bc-name">Gajraj Evergreen</div><div class="bc-size">26 kg bag</div><div class="bc-price">₹1,150</div></div>
+      <div class="brand-card"><div class="bc-name">Kurnool Gold Sona</div><div class="bc-size">25 kg bag</div><div class="bc-price">₹1,100</div></div>
+      <div class="brand-card" style="border-style:dashed;opacity:.7"><div class="bc-name">+ Basmati & more</div><div class="bc-size">Various sizes</div><div class="bc-price" style="font-size:14px;color:rgba(196,154,60,0.5)">Ask us</div></div>
+    </div>
+    <div class="brands-note">Prices subject to market rates. WhatsApp us for today's exact price. Wholesale rates for 20+ bags.</div>
+  </div>
+</section>
+
+<!-- PRICE CHECK CTA -->
+<section class="pcheck-section">
+  <div class="pcheck-inner">
+    <h2 class="pcheck-title">Are you paying<br><em>too much for rice?</em></h2>
+    <p class="pcheck-sub">Take our 60-second price check. Enter your current brand and price — we'll show you exactly how much you can save by switching to SVR.</p>
+    <p class="pcheck-te">మీ current price ని check చేయండి — 60 seconds లో result.</p>
+    <a class="btn-primary" href="https://moonlit-cuchufli-14c385.netlify.app" target="_blank" style="margin:0 auto;display:inline-flex">
+      Check My Price Free →
+    </a>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="story-section" id="story">
+  <div class="story-inner">
+    <div class="section-eyebrow" style="color:rgba(196,154,60,0.7)">Our journey</div>
+    <h2 class="section-title">From <em>farm fields</em><br>to Film Nagar's main road.</h2>
+    <p class="section-sub" style="margin-bottom:0">We didn't start with capital. We started with two hands, a share auto, and rice from the farms we grew up near.</p>
+
+    <div class="story-timeline">
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot"></div><div class="story-year">2003</div></div>
+        <div class="story-content">
+          <div class="story-head">From village fields to Hyderabad's roads</div>
+          <div class="story-body">Farming background, Nalgonda district. When the village could no longer hold us, we came to the city. Drove borewell vehicles, road rollers, lorries. Joined Jubilee Public School as a driver at ₹3,000/month. Later moved to Oakridge International School.</div>
+        </div>
+      </div>
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot" style="background:#5DE0AA"></div><div class="story-year">Night</div></div>
+        <div class="story-content">
+          <div class="story-head">Midnight auto rides & a wife who never stopped</div>
+          <div class="story-body">Started driving share auto evenings for second income — till midnight every night. My wife did daily labour and domestic work alongside. Together, penny by penny, we turned a small hut into our home.</div>
+        </div>
+      </div>
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot" style="background:#e8bb5a"></div><div class="story-year">Idea</div></div>
+        <div class="story-content">
+          <div class="story-head">The rice from Marrigudem</div>
+          <div class="story-body">My wife's family grows rice near Miryalaguda, Nalgonda — fed by Nagarjuna Sagar water. Pure Sona Masoori. Every neighbour who tasted it asked: "Where do you get this?" That question was the seed of everything.</div>
+        </div>
+      </div>
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot"></div><div class="story-year">5 yrs</div></div>
+        <div class="story-content">
+          <div class="story-head">Every Sunday. Share auto. My son beside me.</div>
+          <div class="story-body">Connected with my wife's brother-in-law near Nakrekal — he had rice mill connections. Every Sunday morning: load 5 quintals, drive back to Hyderabad, sell from one room in the house. Did this for 5 years. Volume grew to 40 quintals. The mill started delivering to our door.</div>
+        </div>
+      </div>
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot" style="background:#b83020"></div><div class="story-year">2022</div></div>
+        <div class="story-content">
+          <div class="story-head">One phone call. One shutter. One name.</div>
+          <div class="story-body">My brother called: "The shutter beside my shop is available." We met the owner. We agreed. Sri Venkateshwara Rice Traders — main road, opposite Current Office, Film Nagar — opened its doors.</div>
+        </div>
+      </div>
+      <div class="story-item">
+        <div class="story-dot-wrap"><div class="story-dot" style="background:var(--gold)"></div><div class="story-year">Today</div></div>
+        <div class="story-content">
+          <div class="story-head">500+ families. 19 brands. 3 years.</div>
+          <div class="story-body">From Sona Masoori only, to 19 premium brands — each hand-selected. From 5 quintals in a share auto to supplying hotels, caterers and retail shops across Hyderabad. Same values. Same promise. Made for Quality.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-pullquote">
+      <div class="story-pullquote-text">"I came a long way to reach here. Every step — the lorry, the auto, the Sunday mornings with my son — was worth it. Because every customer who trusts us trusts our journey too."</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section wide">
+  <div class="section-eyebrow">What customers say</div>
+  <h2 class="section-title">Real words from <em>real buyers</em></h2>
+  <div class="test-grid">
+    <div class="test-card">
+      <div class="test-stars">★★★★★</div>
+      <div class="test-text">"Been buying from SVR for 2 years now. Quality is consistent — never once got mixed rice. My mess runs on their Gajraj Pooja HMT."</div>
+      <div class="test-author">Ravi Shankar</div>
+      <div class="test-role">Mess Operator, Jubilee Hills</div>
+    </div>
+    <div class="test-card">
+      <div class="test-stars">★★★★★</div>
+      <div class="test-text te">"Price check చేశాను — bag కి ₹180 overpay చేస్తున్నాను. SVR కి switch చేశాను. నెలకు ₹1,440 save అవుతున్నాను."</div>
+      <div class="test-author">Lakshmi Reddy</div>
+      <div class="test-role">Home buyer, Film Nagar</div>
+    </div>
+    <div class="test-card">
+      <div class="test-stars">★★★★★</div>
+      <div class="test-text">"We supply 3 hotels in the area. SVR delivers on time, quality never drops, and Venkatesh picks up calls at any hour. That's rare."</div>
+      <div class="test-author">Mohammed Imran</div>
+      <div class="test-role">Hotel Supplier, Banjara Hills</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW TO ORDER -->
+<section class="section" id="order">
+  <div class="section-eyebrow">Ordering is simple</div>
+  <h2 class="section-title">Three steps to <em>better rice</em></h2>
+  <div class="order-steps">
+    <div class="order-step">
+      <div class="os-num">1</div>
+      <div class="os-title">WhatsApp or Call</div>
+      <div class="os-desc">Message us on WhatsApp or call 8096736572. Tell us your brand and quantity needed.</div>
+    </div>
+    <div class="order-step">
+      <div class="os-num">2</div>
+      <div class="os-title">Get Your Price</div>
+      <div class="os-desc">We confirm today's price and delivery slot. Bulk orders (20+ bags) get special wholesale rates.</div>
+    </div>
+    <div class="order-step">
+      <div class="os-num">3</div>
+      <div class="os-title">Receive & Trust</div>
+      <div class="os-desc">Delivered to your door. Every bag exactly as ordered. Zero compromise on quality.</div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px">
+    <a class="btn-primary" href="https://wa.me/918096736572?text=Hello%20SVR%2C%20I%20want%20to%20place%20an%20order." target="_blank">
+      Start Your Order on WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-band" id="location">
+  <div class="location-inner">
+    <div>
+      <h2 class="loc-title">Visit us in<br>Film Nagar</h2>
+      <div class="loc-detail">
+        <span class="loc-detail-icon">📍</span>
+        <div class="loc-detail-text"><strong>Sri Venkateshwara Rice Traders</strong><br>Main Road, Opp. Current Office<br>Road No. 9, Film Nagar<br>Jubilee Hills, Hyderabad — 500033</div>
+      </div>
+      <div class="loc-detail">
+        <span class="loc-detail-icon">📞</span>
+        <div class="loc-detail-text"><strong><a href="tel:918096736572" style="color:var(--gold2)">8096736572</a></strong><br>Call or WhatsApp — 7 AM to 9 PM</div>
+      </div>
+      <div class="loc-detail">
+        <span class="loc-detail-icon">⏰</span>
+        <div class="loc-detail-text"><strong>Open daily</strong><br>7:00 AM to 9:00 PM<br>Sunday included</div>
+      </div>
+    </div>
+    <div class="loc-map-placeholder">
+      <div style="font-size:36px;margin-bottom:10px">🗺️</div>
+      <div style="font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:4px">Film Nagar, Opp. Current Office</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.3)">Road No. 9, Jubilee Hills</div>
+      <a class="loc-map-btn" href="https://maps.google.com/?q=Sri+Venkateshwara+Rice+Traders+Film+Nagar+Hyderabad" target="_blank">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Sri <span>Venkateshwara</span> Rice Traders</div>
+  <div class="footer-tagline">Made for Quality · Film Nagar, Hyderabad</div>
+  <div class="footer-links">
+    <a href="#brands">Our Brands</a>
+    <a href="#story">Our Story</a>
+    <a href="#order">How to Order</a>
+    <a href="#location">Find Us</a>
+    <a href="https://moonlit-cuchufli-14c385.netlify.app" target="_blank">Price Check</a>
+  </div>
+  <div class="footer-copy">© 2025 Sri Venkateshwara Rice Traders · 8096736572 · Film Nagar, Hyderabad</div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/918096736572?text=Hello%20SVR%2C%20I%20want%20to%20know%20your%20rice%20prices." target="_blank" title="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.532 5.843L0 24l6.357-1.508A11.959 11.959 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+</a>
+
+</body>
+</html>
